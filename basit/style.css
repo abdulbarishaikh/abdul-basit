@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  overflow-x: hidden;
+}
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('https://i.imgur.com/WvJvGHB.jpg') no-repeat center center/cover;
+  position: relative;
+}
+.hero .overlay {
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding: 30px;
+}
+.names {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+/* Slider */
+.quotes-section {
+  background-color: #fffbe6;
+  padding: 40px 10px;
+}
+.quote-slider {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scrollQuotes 20s linear infinite;
+}
+.quote {
+  flex: 0 0 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.quote span {
+  display: block;
+  font-style: italic;
+  color: #555;
+}
+
+@keyframes scrollQuotes {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(-300%); }
+}
+
+/* Invitation Sections */
+.invitation {
+  background: #fff;
+  margin: 20px auto;
+  max-width: 600px;
+  border-left: 5px solid #006c67;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+.invitation h3 {
+  color: #006c67;
+}
+
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s forwards;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 1s forwards;
+}
+.delay-1 { animation-delay: 0.6s; }
+.delay-2 { animation-delay: 1.2s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  background: #006c67;
+  color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muslim Wedding Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/arabesque.png'), #fefcf9;
+      background-size: cover;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background: linear-gradient(to right, #004d40, #00695c);
+      color: white;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .bismillah {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+
+    .content {
+      max-width: 700px;
+      margin: auto;
+      padding: 30px 20px;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin-top: -20px;
+    }
+
+    .section {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .section h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5em;
+      color: #004d40;
+    }
+
+    .section p {
+      line-height: 1.8;
+      font-size: 1.1em;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .countdown div {
+      background: #004d40;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      min-width: 70px;
+    }
+
+    .swiper {
+      width: 100%;
+      padding: 20px 0;
+    }
+
+    .swiper-slide {
+      background: #f3f3f3;
+      padding: 20px;
+      border-radius: 10px;
+      font-style: italic;
+      font-size: 1.1em;
+      border-left: 5px solid #004d40;
+      max-width: 90%;
+      margin: auto;
+    }
+
+    .rsvp input, .rsvp button {
+      padding: 10px;
+      width: 80%;
+      margin: 10px auto;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .rsvp button {
+      background: #00695c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .rsvp button:hover {
+      background: #004d40;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background: #004d40;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 600px) {
+      .countdown {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .direction-btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 12px 25px;
+        background: #00796b;
+        color: #fff;
+        font-size: 1em;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 10px rgba(0, 121, 107, 0.3);
+    }
+
+    .direction-btn:hover {
+        background: #004d40;
+        transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+
+<header data-aos="fade-down">
+  <div class="bismillah">بِسْمِ ٱللّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+  <!-- <h1>Wedding Invitation</h1> -->
+</header>
+
+<div class="content">
+
+  <div class="section" data-aos="fade-up">
+  <h2>Abdul Basit & Ayesha</h2>
+  <p>Request the honor of your presence to celebrate their Nikah</p>
+
+  <p><strong>📅 Date:</strong> 13th August 2025</p>
+
+  <p><strong>🕌 Nikah Venue:</strong> Masjid-e-Taqwa, Roshan Gate, Aurangabad</p>
+  <a href="https://www.google.com/maps?q=Masjid-e-Taqwa,+Roshan+Gate,+Aurangabad" target="_blank" class="direction-btn" data-aos="zoom-in">
+    🧭 Nikah Directions
+  </a>
+
+  <p><strong>🏛️ Reception Venue:</strong> Ayesha Function Hall, Beed By Pass Road, Aurangabad</p>
+  <a href="https://www.google.com/maps?q=Ayesha+Function+Hall,+Beed+Bypass+Road,+Aurangabad" target="_blank" class="direction-btn" data-aos="zoom-in">
+    🧭 Reception Directions
+  </a>
+
+  <p><strong>⏰ Time:</strong> After Asr Prayer (Namaz-e-Asr)</p>
+</div>
+
+
+  <div class="countdown" id="countdown" data-aos="zoom-in">
+    <div><span id="days">--</span><br>Days</div>
+    <div><span id="hours">--</span><br>Hours</div>
+    <div><span id="minutes">--</span><br>Minutes</div>
+    <div><span id="seconds">--</span><br>Seconds</div>
+  </div>
+
+  <div class="section" data-aos="fade-up">
+    <h2>Walima Invitation</h2>
+    <p><strong>📅 Date:</strong> 14th July 2025</p>
+    <p><strong>📍 Venue:</strong> RK Function Hall, Beed By Pass Road Aurangabad</p>
+    <p><strong>🏛️ Reception Venue:</strong> RK Function Hall, Beed By Pass Road, Aurangabad</p>
+  <a href="https://www.google.com/maps?q=R+K+Mandi+house,+Beed+Bypass+Road,+Aurangabad" target="_blank" class="direction-btn" data-aos="zoom-in">
+    🧭 Reception Directions
+  </a>
+    <p><strong>⏰ Time:</strong> Bad Namaz-e-Magrib onwards</p>
+    <p>Join us in this joyful Sunnah to bless the union.</p>
+  </div>
+
+  <div class="section" data-aos="fade-up">
+    <!-- <h2>Sunnah & Qur’an Quotes</h2> -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">“When a man marries, he has fulfilled half of his religion.” — Prophet Muhammad ﷺ</div>
+        <div class="swiper-slide">“The best of you are those who are best to their wives.” — Prophet Muhammad ﷺ</div>
+        <div class="swiper-slide">“And We created you in pairs.” — (Qur’an 78:8)</div>
+        <div class="swiper-slide">“Nikah is my Sunnah, and whoever turns away from my Sunnah is not from me.” — Prophet Muhammad ﷺ</div>
+        <div class="swiper-slide">“Among His signs is that He created for you spouses... and placed between you love and mercy.” — (Qur’an 30:21)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="section rsvp" data-aos="fade-up">
+    <h2>RSVP</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <button onclick="alert('Thank you for your RSVP!')">Submit</button>
+  </div> -->
+
+</div>
+
+<footer data-aos="fade-in">
+  May Allah bless this union with love, joy, and Barakah. Ameen.
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Countdown Timer
+  const weddingDate = new Date("July 13, 2025 18:00:00").getTime();
+  setInterval(() => {
+    const now = new Date().getTime();
+    const gap = weddingDate - now;
+
+    const day = 1000 * 60 * 60 * 24;
+    const hour = 1000 * 60 * 60;
+    const minute = 1000 * 60;
+    const second = 1000;
+
+    document.getElementById('days').textContent = Math.floor(gap / day);
+    document.getElementById('hours').textContent = Math.floor((gap % day) / hour);
+    document.getElementById('minutes').textContent = Math.floor((gap % hour) / minute);
+    document.getElementById('seconds').textContent = Math.floor((gap % minute) / second);
+  }, 1000);
+
+  // Swiper Slider
+  new Swiper('.swiper', {
+    loop: true,
+    autoplay: { delay: 5000 },
+    effect: 'fade',
+  });
+</script>
+
+</body>
+</html>

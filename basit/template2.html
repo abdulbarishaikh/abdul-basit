@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muslim Wedding Invitation</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f2ee;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1528459105426-b7b7cd22c666?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero .bismillah {
+      font-size: 1.5em;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4em;
+      animation: fadeInUp 2s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* INVITE CARDS */
+    .card-section {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 60px auto;
+      max-width: 1100px;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      flex: 1 1 500px;
+      display: flex;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 50%;
+      object-fit: cover;
+    }
+
+    .card .text {
+      padding: 30px;
+    }
+
+    .card h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2em;
+      color: #004d40;
+    }
+
+    .card p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    /* QUOTES SLIDER */
+    .quote-slider {
+      background: #004d40;
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .swiper {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .swiper-slide {
+      font-size: 1.2em;
+      font-style: italic;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-left: 4px solid #ffd700;
+      border-radius: 10px;
+    }
+
+    /* RSVP */
+    .rsvp {
+      max-width: 500px;
+      margin: 50px auto;
+      text-align: center;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .rsvp h2 {
+      font-family: 'Great Vibes', cursive;
+      color: #00695c;
+      font-size: 2em;
+    }
+
+    .rsvp input, .rsvp button {
+      width: 80%;
+      padding: 12px;
+      margin: 10px auto;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .rsvp button {
+      background: #004d40;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #002b27;
+      color: #eee;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .card { flex-direction: column; }
+      .card img { width: 100%; height: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="bismillah">بِسْمِ ٱللّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+  <h1>Abdullah & Ayesha</h1>
+  <p style="z-index:2;">Cordially Invite You to Celebrate Their Wedding</p>
+</div>
+
+<!-- WEDDING / WALIMA -->
+<section class="card-section">
+  <div class="card" data-aos="fade-right">
+    <img src="https://images.unsplash.com/photo-1542204165-19b034c0f59b?auto=format&fit=crop&w=600&q=80" alt="wedding">
+    <div class="text">
+      <h2>Wedding (Nikah)</h2>
+      <p><strong>Date:</strong> 20 August 2025<br>
+         <strong>Time:</strong> 7:00 PM<br>
+         <strong>Venue:</strong> Royal Palace Banquet Hall, Mumbai</p>
+    </div>
+  </div>
+
+  <div class="card" data-aos="fade-left">
+    <img src="https://images.unsplash.com/photo-1520024146160-64eec6e8c341?auto=format&fit=crop&w=600&q=80" alt="walima">
+    <div class="text">
+      <h2>Walima</h2>
+      <p><strong>Date:</strong> 22 August 2025<br>
+         <strong>Time:</strong> 1:00 PM<br>
+         <strong>Venue:</strong> Pearl Grand Hotel, Mumbai</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE SLIDER -->
+<section class="quote-slider" data-aos="zoom-in">
+  <h2 style="font-family:'Great Vibes'; font-size:2.2em;">Sunnah & Qur’an Quotes</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">“When a man marries, he has fulfilled half of his religion.” — Prophet Muhammad ﷺ</div>
+      <div class="swiper-slide">“And We created you in pairs.” — Qur’an 78:8</div>
+      <div class="swiper-slide">“The best of you are those who are best to their wives.” — Prophet Muhammad ﷺ</div>
+      <div class="swiper-slide">“Among His signs is that He created for you spouses... and placed between you love and mercy.” — Qur’an 30:21</div>
+      <div class="swiper-slide">“Nikah is my Sunnah, and whoever turns away from it is not from me.” — Prophet Muhammad ﷺ</div>
+    </div>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="rsvp" data-aos="fade-up">
+  <h2>RSVP</h2>
+  <input type="text" placeholder="Your Name" />
+  <input type="email" placeholder="Your Email" />
+  <button onclick="alert('Thank you for your RSVP!')">Submit</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  May Allah bless this union with love, joy, and Barakah. Ameen.
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+  new Swiper('.swiper', {
+    loop: true,
+    autoplay: { delay: 5000 },
+    effect: 'fade'
+  });
+</script>
+
+</body>
+</html>
